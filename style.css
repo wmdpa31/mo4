@@ -1,5 +1,5 @@
 body {
-  font-family: 'GowunBatang', serif;
+  font-family: "GowunBatang", serif;
   /* 고운바탕 폰트 적용 */
 }
 
@@ -34,7 +34,7 @@ body {
   right: 2rem;
   width: 13px;
   height: 10px;
-  background-image: url('./img/arrow.png');
+  background-image: url("./img/arrow.png");
   background-size: cover;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 #gallerySection {
-  background-color: #f9f0d8;
+  background-color: #f4eeeb;
   padding-top: 20%;
 }
 
@@ -110,7 +110,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 5px;
-  background-color: #fcf3e9;
+  background-color: #f4eeeb;
   /* (A2) OPTIONAL WIDTH RESTRICT */
   max-width: 1000px;
   margin: 0 auto;
@@ -209,7 +209,7 @@ body {
 }
 
 .countdownTimeInfo {
-  color: #ff6b00;
+  color: #e5a39b;
   font-weight: 600;
 }
 
@@ -251,7 +251,7 @@ body {
 
 #locationSection {
   margin-top: 3%;
-  background-color: #f9f0d8;
+  background-color: #f4eeeb;
   height: 265px;
 }
 
@@ -268,7 +268,7 @@ main {
 }
 
 #locationMoveSection {
-  background-color: #f9f0d8;
+  background-color: #f4eeeb;
   display: flex;
   flex-direction: column;
   /* 요소들을 수직으로 정렬합니다. */
@@ -276,19 +276,7 @@ main {
   /* 요소들을 수평으로 정렬합니다. */
 }
 
-#locationMoveBox1 {
-  padding-top: 7%;
-  padding-bottom: 7%;
-  margin-top: 3%;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-}
-
-#locationMoveBox2 {
+#locationMoveBox {
   padding-top: 7%;
   padding-bottom: 7%;
   margin-top: 3%;
@@ -306,6 +294,14 @@ main {
   margin-bottom: 2%;
 }
 
+#locationMoveSubInfo {
+  line-height: 1.6rem;
+  font-size: 12px;
+  color: #747474;
+  font-weight: 500;
+  margin-bottom: 4%;
+}
+
 #locationMoveInfo {
   line-height: 1.6rem;
   font-size: 12px;
@@ -320,7 +316,7 @@ main {
 }
 
 .accordion {
-  background-color: #f9f0d8;
+  background-color: #f4eeeb;
   color: black;
   cursor: pointer;
   padding: 0.8rem;
@@ -400,7 +396,7 @@ main {
 }
 
 #MapIconDiv {
-  color: #666666;
+  color: #ffffff;
   font-size: 13px;
   text-align: center;
   background-color: white;
@@ -412,6 +408,7 @@ main {
 }
 
 #kakaoMapButton {
+  background-color: #d8b8aa;
   padding: 10px;
   text-align: center;
   width: auto;
@@ -470,4 +467,24 @@ main {
     font-size: 14px;
     /* padding: 0 15px; */
   }
+}
+
+.swiper-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
 }
