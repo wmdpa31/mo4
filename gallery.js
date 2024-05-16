@@ -80,7 +80,7 @@ window.onload = () => {
 
   // const btnShareFb = document.querySelector(".shareFb");
   // btnShareFb.addEventListener("click", () => {
-  //   const pageUrl = "mo2.luvle.co.kr/";
+  //   const pageUrl = "mo4.luvle.co.kr/";
   //   window.open(`http://www.facebook.com/sharer/sharer.php?u=${pageUrl}`);
   // });
 
